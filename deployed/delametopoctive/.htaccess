@@ -30,3 +30,9 @@ RewriteRule ^domains/[^/]+/(.+[^/])$ /$1/ [R]
 # subdomeny - spravne presmerovani pri chybejicim /
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^subdom/[^/]+/(.+[^/])$ /$1/ [R]
+
+# DISABLE CACHING
+# for 3 days stejne jako na http://187762.w62.wedos.ws/
+<IfModule mod_headers.c>
+Header set Cache-Control "max-age=259200"
+</IfModule>
