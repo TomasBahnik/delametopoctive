@@ -51,7 +51,7 @@
         }
 
         //let's put all data together
-        var myData = 'postName=' + js_name + '&postEmail=' + js_email + '&postPhone=' + js_phone + '&postMessage=' + js_message;
+        var myData = '&postName=' + js_name + '&postEmail=' + js_email + '&postPhone=' + js_phone + '&postMessage=' + js_message;
 
         jQuery.ajax({
             type: "POST",
