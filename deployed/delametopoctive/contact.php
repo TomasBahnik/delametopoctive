@@ -1,5 +1,5 @@
 <?php
-$toEmail 		= "asd@asdasd"; //Replace it recipient email address
+$toEmail 		= "jana.elich@email.cz"; //Replace it recipient email address
 $subject 		= 'Ah!! My email from Somebody out there...'; //Subject line for emails
 
 //Let's clean harmful characters from raw POST data using PHP Sanitize filters.
@@ -63,9 +63,9 @@ if(!$sentMail)
 		header('HTTP/1.1 500 Couldnot send mail! Sorry..'); 
 		exit();
 	}else{
-		echo '<h3>Hi '.$postName.', Thank you for your email</h3>
-		<p>Your email has already arrived in our Inbox, all We need to do is Check it..
-		<br />Good day.</p>';
+		echo '<h3>Dobry den '.$postName.', děkujeme za Vaši zprávu.</h3>
+		<p>Vaše zpráva byla úspěšně odeslána. Budeme Vás v nejbližší době kontaktovat...
+		<br />Přejeme hezký den.</p>';
 	}
 
 ?>
